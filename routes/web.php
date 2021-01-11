@@ -16,3 +16,15 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('users', 'UserController')->only([
+    'index', 'edit', 'update', 'destroy',
+]);
+Route::group(['prefix' => 'tasks'], function () {
+    Route::get('/', 'TaskController@index')->name('index');
+    Route::get('/create','TaskController@createTask')->name('add');
+    Route::post('/create', 'TaskController@storeTask');
+    Route::get('/edit/{id}', 'TaskController@editTask')->name('edit');
+    Route::post('/edit/{id}', 'TaskController@updateTask');
+    Route::get('/delete/{id}', 'TaskController@deleteTask')->name('delete');
+});
