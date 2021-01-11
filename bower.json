@@ -1,0 +1,21 @@
+{
+  "name": "laravel_quicktask_CRUD",
+  "description": "",
+  "main": "",
+  "authors": [
+    "chienmp <chienmp.cn@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/chienmp/laravel_quicktask_CRUD",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "components-font-awesome": "^5.15.1"
+  }
+}
