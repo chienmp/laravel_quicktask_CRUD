@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
+Route::get('lang/{lang}', 'LangController@changeLanguage')->name('lang');
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('users', 'UserController')->only([
@@ -22,7 +23,7 @@ Route::resource('users', 'UserController')->only([
 ]);
 Route::group(['prefix' => 'tasks'], function () {
     Route::get('/', 'TaskController@index')->name('index');
-    Route::get('/create','TaskController@createTask')->name('add');
+    Route::get('/create', 'TaskController@createTask')->name('add');
     Route::post('/create', 'TaskController@storeTask');
     Route::get('/edit/{id}', 'TaskController@editTask')->name('edit');
     Route::post('/edit/{id}', 'TaskController@updateTask');

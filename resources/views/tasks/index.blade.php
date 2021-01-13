@@ -6,13 +6,13 @@
 
 <body>
     <div class="container">
-        <h2 style="text-align: center">{{trans('user_table')}}</h2><br><br><br>
+        <h2 style="text-align: center">{{trans('task')}}</h2><br><br><br>
         @if(session()->get('success'))
         <div class="alert alert-success">
             {{ session()->get('success') }}
         </div>
         @endif
-        <a href="{{route('add')}}" class="btn btn-success">{{trans('add')}}</a>
+        <a href="{{route('add')}}" class="btn btn-success">{{trans('add')}}</a><br><br>
         <table class="table table-bordered ">
             <thead>
                 <tr>

@@ -3,7 +3,6 @@
 <link rel="stylesheet" href="{{asset('css/app.css')}}">
 <script src="{{asset('js/users.js')}}"></script>
 
-
 <body>
     <div class="container">
         <h2 style="text-align: center">{{trans('user_table')}}</h2><br><br><br>
@@ -23,7 +22,6 @@
             </thead>
             <tbody>
                 @foreach($users as $user)
-
 
                 <tr>
                     <td>{{$user->name}}</td>

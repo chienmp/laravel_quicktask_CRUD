@@ -1,0 +1,15 @@
+{
+    "login": "Đăng nhập",
+    "password": "Mật khẩu",
+    "register": "Đăng ký",
+    "email": "Địa chỉ E-Mail",
+    "user_table": "Quản Lý Người Dùng",
+    "name": "Tên người dùng",
+    "confirm_password": "Xác nhận mật khẩu",
+    "user_update": "Cập nhật người dùng",
+    "confirm_delete": "Xac nhan xoa ?",
+    "edit": "Sửa",
+    "delete": "Xóa",
+    "add": "Thêm mới",
+    "task": "Quản lý nhiệm vụ"
+}
