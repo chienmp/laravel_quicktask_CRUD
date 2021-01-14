@@ -4,7 +4,7 @@
 /storage/*.key
 /public/css
 /public/js
-/public/bower_components/*
+/public/bower_components
 /vendor
 .env
 .env.backup
@@ -15,5 +15,3 @@ npm-debug.log
 yarn-error.log
 .bowerrc
 bower.json
-/resources/lang/en.json
-/resources/lang/vi.json
