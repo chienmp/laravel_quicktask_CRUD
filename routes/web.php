@@ -12,14 +12,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
 Route::resource('users', 'UserController')->only([
     'index', 'edit', 'update', 'destroy',
 ]);
+Route::get('lang/{lang}', 'LangController@lang')->name('lang');
 Route::group(['prefix' => 'tasks'], function () {
     Route::get('/', 'TaskController@index')->name('index');
     Route::get('/create','TaskController@createTask')->name('add');
