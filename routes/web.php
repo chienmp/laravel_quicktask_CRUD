@@ -11,12 +11,11 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
+ */
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
 Route::resource('users', 'UserController')->only([
     'index', 'edit', 'update', 'destroy',
 ]);
@@ -28,3 +27,4 @@ Route::group(['prefix' => 'tasks'], function () {
     Route::post('/edit/{id}', 'TaskController@updateTask');
     Route::get('/delete/{id}', 'TaskController@deleteTask')->name('delete');
 });
+Route::get('lang/{lang}', 'LangController@lang')->name('lang');
