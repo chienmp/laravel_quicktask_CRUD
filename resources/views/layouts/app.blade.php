@@ -41,6 +41,9 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        <a href="{{ route('lang', ['lang' => 'vi']) }}">VI</a>
+                        <a href="{{ route('lang', ['lang' => 'en' ]) }}">EN</a>
+
                         <!-- Authentication Links -->
                         @guest
                         <li class="nav-item">
