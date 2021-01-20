@@ -1,0 +1,15 @@
+{
+    "login": "Login",
+    "password": "Password",
+    "register": "Register",
+    "email": "E-Mail Address",
+    "user_table": "User management",
+    "name" : "Username",
+    "confirm_password": "Confirm Password",
+    "user_update": "Update User",
+    "confirm_delete": "Confirm delete ?",
+    "edit": "Edit",
+    "delete": "Delete",
+    "add": "Add new value",
+    "task": "Task management"
+}

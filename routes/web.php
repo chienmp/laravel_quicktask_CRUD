@@ -27,4 +27,4 @@ Route::group(['prefix' => 'tasks'], function () {
     Route::post('/edit/{id}', 'TaskController@updateTask');
     Route::get('/delete/{id}', 'TaskController@deleteTask')->name('delete');
 });
-Route::get('lang/{lang}', 'LangController@lang')->name('lang');
+Route::get('lang/{lang}', 'LangController@changeLanguage')->name('lang');
